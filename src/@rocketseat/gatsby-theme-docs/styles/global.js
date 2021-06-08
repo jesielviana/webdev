@@ -32,15 +32,15 @@ export default function GlobalStyle () {
           --heading: #1f2937;
           --divide: #e5e7eb;
           --bg-color: #f3f4f6;
-          --text-color: #6b7280; /** 8C8D91 **/
+          --text-link: #6d28d9;
 
           background-color: var(--bg);
           color: var(--text);
         }
 
         body.dark {
-          --active-link: #ffffff;
-          --bg-shape: #2e3544;
+          --active-link: #b6a2ec;
+          --bg-shape: #41495d;
 
           --bg: #1a202c;
           --text: #9ca3af;
@@ -50,7 +50,7 @@ export default function GlobalStyle () {
           --heading: #d1d5db;
           --divide: #4b5563;
           --bg-color: #374151;
-          --text-color: #e5e7eb;
+          --text-link: #a183e4;
         }
 
         h1 {
@@ -112,8 +112,8 @@ export default function GlobalStyle () {
           padding: 4px;
         }
         a {
-          color: ${theme.colors.text};
-          font-weight: bold;
+          color: var(--text-link);
+          font-weight: 500;
           text-decoration: none;
           &:hover {
             text-decoration: underline;
