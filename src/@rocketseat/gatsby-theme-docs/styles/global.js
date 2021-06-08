@@ -21,8 +21,8 @@ export default function GlobalStyle () {
           text-rendering: optimizelegibility;
           -webkit-font-smoothing: antialiased;
           overflow-y: scroll;
-          --active-link: #8257E6;
-          --bg-shape: #F2F2FA;
+          --active-link: #8257e6;
+          --bg-shape: #f2f2fa;
 
           --bg: #fefefe;
           --text: #111827;
@@ -59,19 +59,19 @@ export default function GlobalStyle () {
           font-weight: bold;
           margin-bottom: 24px;
           @media (max-width: 780px) {
-           font-size: 1.5rem;
+            font-size: 1.5rem;
           }
         }
         h2 {
           font-size: 1.5rem;
           @media (max-width: 780px) {
-           font-size: 1.3rem;
+            font-size: 1.3rem;
           }
         }
         h3 {
           font-size: 1.3rem;
           @media (max-width: 780px) {
-           font-size: 1.2rem;
+            font-size: 1.2rem;
           }
         }
         h4 {

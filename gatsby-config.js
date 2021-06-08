@@ -3,12 +3,13 @@ module.exports = {
     siteTitle: 'Webdev I',
     defaultTitle: 'Webdev I',
     siteTitleShort: 'Webdev I',
-    siteDescription: 'Out of the box Gatsby Theme for creating documentation websites easily and quickly',
-    siteUrl: 'https://rocketdocs.netlify.app',
-    siteAuthor: '@rocketseat',
+    siteDescription:
+      'Website da disciplina de Programação para Internet I do curso de ADS do IFPI Campus Picos',
+    siteUrl: 'https://webdev-i.netlify.app',
+    siteAuthor: '@jesielviana',
     siteImage: '/banner.png',
-    siteLanguage: 'en',
-    themeColor: '#8257E6',
+    siteLanguage: 'pt-br',
+    themeColor: '#ffffff',
     basePath: '/'
   },
   flags: { PRESERVE_WEBPACK_CACHE: true },
@@ -18,8 +19,8 @@ module.exports = {
       options: {
         configPath: 'src/config',
         docsPath: 'src/docs',
-        repositoryUrl: 'https://github.com/rocketseat/gatsby-themes',
-        baseDir: 'examples/gatsby-theme-docs'
+        repositoryUrl: 'https://github.com/jesielviana/webdev-i',
+        baseDir: '/'
       }
     },
     {
@@ -47,14 +48,22 @@ module.exports = {
         siteUrl: 'https://rocketdocs.netlify.app'
       }
     },
-    {
-      resolve: 'gatsby-remark-external-links',
-      options: {
-        target: '_blank',
-        rel: 'noopener'
-      }
-    },
+
     'gatsby-plugin-dark-mode',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_blank',
+              rel: 'noopener'
+            }
+          }
+        ]
+      }
+    }
   ]
 }

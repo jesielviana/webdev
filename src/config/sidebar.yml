@@ -1,6 +1,6 @@
 # Sidebar navigation
 
-- label: 'Introduction'
+- label: 'Apresentação'
   link: '/'
 - label: 'Getting started'
   link: '/getting-started'
