@@ -15,11 +15,11 @@ module.exports = {
   flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     {
-      resolve: '@rocketseat/gatsby-theme-docs',
+      resolve: 'jesielviana-gatsby-theme-docs',
       options: {
         configPath: 'src/config',
         docsPath: 'src/docs',
-        repositoryUrl: 'https://github.com/jesielviana/webdev-i',
+        repositoryUrl: 'https://github.com/rocketseat/gatsby-themes',
         baseDir: '/'
       }
     },
@@ -50,20 +50,6 @@ module.exports = {
     },
 
     'gatsby-plugin-dark-mode',
-    'gatsby-plugin-offline',
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-external-links',
-            options: {
-              target: '_blank',
-              rel: 'noopener'
-            }
-          }
-        ]
-      }
-    }
+    'gatsby-plugin-offline'
   ]
 }
