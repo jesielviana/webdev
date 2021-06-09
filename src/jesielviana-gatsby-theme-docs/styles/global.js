@@ -33,6 +33,7 @@ export default function GlobalStyle () {
           --divide: #e5e7eb;
           --bg-color: #f3f4f6;
           --text-link: #6d28d9;
+          --bg-blockquote: #feebc8;
 
           background-color: var(--bg);
           color: var(--text);
@@ -51,6 +52,7 @@ export default function GlobalStyle () {
           --divide: #4b5563;
           --bg-color: #374151;
           --text-link: #a183e4;
+          --bg-blockquote: #e4b661;
         }
 
         h1 {
@@ -130,7 +132,7 @@ export default function GlobalStyle () {
           p {
             padding: 1rem;
             border-radius: 5px;
-            background: ${theme.colors.components.blockquote.background};
+            background: var(--bg-blockquote);
             color: ${theme.colors.components.blockquote.text};
             margin: 0;
             a {

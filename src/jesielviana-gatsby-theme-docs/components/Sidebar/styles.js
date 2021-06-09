@@ -27,7 +27,7 @@ export const Container = styled.aside`
     bottom: 0;
     left: 0;
     padding-top: 32px;
-    background: ${({ theme }) => theme.colors.background};
+    background: var(--bg);
     transform: translate3d(
       ${({ isMenuOpen }) => (isMenuOpen ? '0' : '-100%')},
       0,

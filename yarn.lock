@@ -8444,10 +8444,10 @@ jesielviana-gatsby-theme-docs-core@^1.0.0:
     gatsby-transformer-yaml "^3.0.0"
     url-join "^4.0.1"
 
-jesielviana-gatsby-theme-docs@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/jesielviana-gatsby-theme-docs/-/jesielviana-gatsby-theme-docs-1.0.5.tgz#e63618c89ebd063a8eccf76449f62912d5ddb878"
-  integrity sha512-q2nCUFoJ7WcEVQFURemtIkB05aP4JXl9LSn8ZUxiYlVBrZ6hOZeBIFs8FDqZflvQDcUsMN1kt/7U+M+YtHMHVA==
+jesielviana-gatsby-theme-docs@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/jesielviana-gatsby-theme-docs/-/jesielviana-gatsby-theme-docs-1.0.6.tgz#5ce7d8d0bbd134a1de692e44c9d7091d9b9fa390"
+  integrity sha512-95GznLiX9z8AICn9y3PcnsK8gga7zth1jJehhOUennDe0qANebq3JC4O0esw5wyyf7e8baL4+QW+8arvDQHy/Q==
   dependencies:
     "@emotion/react" "^11.1.5"
     "@emotion/styled" "^11.0.0"

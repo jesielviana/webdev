@@ -7,10 +7,14 @@ import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 const Container = styled.header`
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   height: 40px;
   margin-bottom: 24px;
+  @media (min-width: 780px) {
+    height: 0;
+    margin-bottom: 0;
+  }
   h2 {
     margin: 0;
     border: none;
@@ -49,110 +53,110 @@ const Container = styled.header`
     transition: all 0.45s ease;
     overflow: visible;
     box-shadow: none;
-}
-
-.toggle-color-mode {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  border: none;
-  background-color: transparent;
-  transform: scale(1);
-  transition: all 0.45s ease;
-  overflow: hidden;
-  box-shadow: inset 8px -8px 0px 0px var(--toggleIcon);
-}
-
-.toggle-color-mode:checked:before {
-  content: '';
-  position: absolute;
-  right: -9px;
-  top: -9px;
-  height: 24px;
-  width: 24px;
-  border: 2px solid var(--toggleIcon);
-  border-radius: 50%;
-  transform: translate(14px, -14px);
-  opacity: 0;
-  transition: transform 0.45s ease;
-}
-
-.toggle-color-mode:checked:after {
-  content: '';
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  margin: -4px 0 0 -4px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  box-shadow: 0 -23px 0 var(--toggleIcon), 0 23px 0 var(--toggleIcon),
-    23px 0 0 var(--toggleIcon), -23px 0 0 var(--toggleIcon),
-    15px 15px 0 var(--toggleIcon), -15px 15px 0 var(--toggleIcon),
-    15px -15px 0 var(--toggleIcon), -15px -15px 0 var(--toggleIcon);
-  transform: scale(1);
-  transition: all 0.35s ease;
-}
-
-.toggle-color-mode:before {
-  content: '';
-  position: absolute;
-  right: -9px;
-  top: -9px;
-  height: 24px;
-  width: 24px;
-  border: none;
-  border-radius: 50%;
-  transform: translate(0, 0);
-  opacity: 1;
-  transition: transform 0.45s ease;
-}
-
-.toggle-color-mode:after {
-  content: '';
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  margin: -4px 0 0 -4px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  box-shadow: 0 -23px 0 var(--toggleIcon), 0 23px 0 var(--toggleIcon),
-    23px 0 0 var(--toggleIcon), -23px 0 0 var(--toggleIcon),
-    15px 15px 0 var(--toggleIcon), -15px 15px 0 var(--toggleIcon),
-    15px -15px 0 var(--toggleIcon), -15px -15px 0 var(--toggleIcon);
-  transform: scale(0);
-  transition: all 0.35s ease;
-}
-
-.toggle-color-mode:focus {
-  outline: none;
-}
-
-.toggle-color-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0;
-  @media (min-width: 780px) {
-    padding: calc(1rem + 1.5% + 2px) calc(3% + 1rem) 0 0;
   }
-}
 
-.toggle-color-btn-slides {
-  position: absolute;
-  top: calc(1rem + 5%);
-  right: 2rem;
-}
+  .toggle-color-mode {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    transform: scale(1);
+    transition: all 0.45s ease;
+    overflow: hidden;
+    box-shadow: inset 8px -8px 0px 0px var(--toggleIcon);
+  }
 
-input[type='checkbox'] {
-  -webkit-appearance: checkbox !important;
-  -moz-appearance: checkbox !important;
-  -ms-appearance: checkbox !important;
-  -o-appearance: checkbox !important;
-  appearance: none !important;
-}
+  .toggle-color-mode:checked:before {
+    content: '';
+    position: absolute;
+    right: -9px;
+    top: -9px;
+    height: 24px;
+    width: 24px;
+    border: 2px solid var(--toggleIcon);
+    border-radius: 50%;
+    transform: translate(14px, -14px);
+    opacity: 0;
+    transition: transform 0.45s ease;
+  }
+
+  .toggle-color-mode:checked:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: -4px 0 0 -4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 -23px 0 var(--toggleIcon), 0 23px 0 var(--toggleIcon),
+      23px 0 0 var(--toggleIcon), -23px 0 0 var(--toggleIcon),
+      15px 15px 0 var(--toggleIcon), -15px 15px 0 var(--toggleIcon),
+      15px -15px 0 var(--toggleIcon), -15px -15px 0 var(--toggleIcon);
+    transform: scale(1);
+    transition: all 0.35s ease;
+  }
+
+  .toggle-color-mode:before {
+    content: '';
+    position: absolute;
+    right: -9px;
+    top: -9px;
+    height: 24px;
+    width: 24px;
+    border: none;
+    border-radius: 50%;
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: transform 0.45s ease;
+  }
+
+  .toggle-color-mode:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: -4px 0 0 -4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 -23px 0 var(--toggleIcon), 0 23px 0 var(--toggleIcon),
+      23px 0 0 var(--toggleIcon), -23px 0 0 var(--toggleIcon),
+      15px 15px 0 var(--toggleIcon), -15px 15px 0 var(--toggleIcon),
+      15px -15px 0 var(--toggleIcon), -15px -15px 0 var(--toggleIcon);
+    transform: scale(0);
+    transition: all 0.35s ease;
+  }
+
+  .toggle-color-mode:focus {
+    outline: none;
+  }
+
+  .toggle-color-btn {
+    top: 0;
+    right: 0;
+    padding: 0;
+    @media (min-width: 780px) {
+      padding: calc(1rem + 1.5% + 2px) calc(3% + 1rem) 0 0;
+      position: absolute;
+    }
+  }
+
+  .toggle-color-btn-slides {
+    position: absolute;
+    top: calc(1rem + 5%);
+    right: 2rem;
+  }
+
+  input[type='checkbox'] {
+    -webkit-appearance: checkbox !important;
+    -moz-appearance: checkbox !important;
+    -ms-appearance: checkbox !important;
+    -o-appearance: checkbox !important;
+    appearance: none !important;
+  }
 `
 
 export default function Header ({ handleMenuOpen }) {
@@ -172,6 +176,14 @@ export default function Header ({ handleMenuOpen }) {
 
   return (
     <Container>
+      <button aria-label='Open sidebar' type='button' onClick={handleMenuOpen}>
+        <GiHamburgerMenu
+          color='var(--toggleIcon)'
+          size={30}
+          aria-hidden='true'
+        />
+      </button>
+      <h2>{siteTitle}</h2>
       <ThemeToggler>
         {({ theme, toggleTheme }) => (
           <label className='toggle-color-btn'>
@@ -179,17 +191,12 @@ export default function Header ({ handleMenuOpen }) {
               title={theme === 'dark' ? 'Light' : 'Dark'}
               className='toggle-color-mode'
               type='checkbox'
-              onChange={e =>
-                toggleTheme(e.target.checked ? 'dark' : 'light')}
+              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
               checked={theme === 'dark'}
             />{' '}
           </label>
         )}
       </ThemeToggler>
-      <button aria-label='Open sidebar' type='button' onClick={handleMenuOpen}>
-        <GiHamburgerMenu size={23} aria-hidden='true' />
-      </button>
-      <h2>{siteTitle}</h2>
     </Container>
   )
 }
