@@ -2,19 +2,21 @@
 
 - label: 'Apresentação'
   link: '/'
-- label: 'Getting started'
-  link: '/getting-started'
-- label: Usage
+- label: Introdução
+  items:
+    - label: 'Getting started'
+      link: '/getting-started'
+- label: Frontend
   items:
     - label: 'Creating docs'
       link: '/usage/creating-docs'
     - label: 'Navigation'
       link: '/usage/navigation'
+- label: Backend
+  items:
     - label: 'Shadowing'
       link: '/usage/shadowing'
-- label: More
+- label: Contato
   items:
     - label: FAQ
       link: /faq
-    - label: 'Github'
-      link: https://github.com/rocketseat/gatsby-themes

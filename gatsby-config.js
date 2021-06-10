@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: 'Webdev I',
-    defaultTitle: 'Webdev I',
-    siteTitleShort: 'Webdev I',
+    siteTitle: 'Webdev',
+    defaultTitle: 'Webdev',
+    siteTitleShort: 'Webdev',
     siteDescription:
       'Website da disciplina de Programação para Internet I do curso de ADS do IFPI Campus Picos',
     siteUrl: 'https://webdev-i.netlify.app',
@@ -26,8 +26,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Webdev I',
-        short_name: 'Webdev I',
+        name: 'Webdev',
+        short_name: 'Webdev',
         start_url: '/',
         background_color: '#ffffff',
         display: 'standalone',
